@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: #1a1a2e; /* Sleek dark blue background */
+  color: #ffffff;
+}
+
+.App {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #16213e;
+  padding-bottom: 20px;
+}
+
+/* When the screen gets wider, put title on left and scores on right */
+@media (min-width: 768px) {
+  .header {
+    flex-direction: row;
+  }
+}
+
+.scoreboard {
+  display: flex;
+  gap: 20px;
+  background: #0f3460;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.scoreboard p {
+  margin: 0;
+  font-size: 1.1rem;
+}
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 25px;
+  padding: 10px;
+}
+.card {
+  background: #16213e;
+  border-radius: 12px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  
+  /* Smooth animation transition when hover triggers */
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
+}
+
+/* Subtle border highlight and lift effect on hover */
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 20px rgba(233, 69, 96, 0.3); 
+  background-color: #1f305e;
+}
+
+.card img {
+  width: 130px;
+  height: 130px;
+  object-fit: contain;
+  margin-bottom: 12px;
+}
+
+.card h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  text-transform: capitalize; 
+  color: #e94560; 
+  letter-spacing: 0.5px;
+}
