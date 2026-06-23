@@ -3,7 +3,7 @@
 A fun, interactive memory-testing game built with React and Vite. The application fetches data from the public PokeAPI to dynamically display collectible card components. The goal is to challenge your memory by clicking each Pokémon card only once!
 
 ## 🚀 Live Demo
-[🔗 View Live Project on Vercel](https://pokemon-memory-game-nqhd5er47-munibah1707-cpus-projects.vercel.app) *(Replace this with your actual live deployment link!)*
+[🔗 View Live Project on Vercel](https://pokemon-memory-game-2zgbzoa2p-munibah1707-cpus-projects.vercel.app/)
 
 ---
 
